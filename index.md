@@ -4,9 +4,18 @@
     <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
 </head>
 
-# Juan José Sánchez Medina
-
-## [Home](#home) | [CV](#cv) | [Publications](#publications) | [Talks](#talks) | [Awards](#awards) | [Contact](#contact)
+<div style="text-align: center;">
+    <h1>Juan José Sánchez Medina</h1>
+    
+    <h2>
+        <a href="#home">Home</a> | 
+        <a href="#cv">CV</a> | 
+        <a href="#publications">Publications</a> | 
+        <a href="#talks">Talks</a> | 
+        <a href="#awards">Awards</a> | 
+        <a href="#contact">Contact</a>
+    </h2>
+</div>
 
 ---
 
