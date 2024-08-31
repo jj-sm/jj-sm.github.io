@@ -1,8 +1,8 @@
 title: Juan José Sánchez # your name (or website title) here
 favicon: "/resources/images/favicon.png"
 logo: "/resources/images/favicon.png raw=true" # your photo (or logo) here
-description: > # your text below (remove <br> elements if you don't need line breaks)
-  About Me
+#description: > # your text below (remove <br> elements if you don't need line breaks)
+#  About Me
 #  <br><br>
 #  <a href="https://www.linkedin.com/in/jj-sm/">LinkedIn Profile</a> 
   
