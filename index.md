@@ -1,3 +1,9 @@
+<head>
+    <!-- Other head content -->
+    <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+</head>
+
 # Juan José Sánchez Medina
 
 ## [Home](#home) | [CV](#cv) | [Publications](#publications) | [Talks](#talks) | [Awards](#awards) | [Contact](#contact)
@@ -15,7 +21,7 @@ I am passionate about the intersection of astronomy and technology, where coding
 - **Interests:** Astronomy, Astrophysics, Physics, Mathematics, Coding, Photography, Music
 
 <div style="text-align: center;">
-    <img src="resources/images/pfp.jpg" alt="Profile Image" style="width: 150px; border-radius: 15%;">
+    <img src="resources/images/pfp.jpg" alt="Profile Image" style="width: 200px; border-radius: 25%;">
 </div>
 ---
 
@@ -73,11 +79,7 @@ I am passionate about the intersection of astronomy and technology, where coding
 
 ---
 
-<head>
-    <!-- Other head content -->
-    <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
-</head>
+
 
 <!-- Optional: Add a footer with links to social media or additional resources -->
 
