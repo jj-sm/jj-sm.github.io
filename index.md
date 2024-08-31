@@ -73,5 +73,11 @@ I am passionate about the intersection of astronomy and technology, where coding
 
 ---
 
+<head>
+    <!-- Other head content -->
+    <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+</head>
+
 <!-- Optional: Add a footer with links to social media or additional resources -->
 
