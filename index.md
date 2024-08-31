@@ -30,7 +30,7 @@ I am passionate about the intersection of astronomy and technology, where coding
 
 ## 📄 CV
 
-[Download my CV](path/to/your/cv.pdf) <!-- Replace with your CV link -->
+[Download my CV](resouces/docs/CV__EN_-2.pdf) <!-- Replace with your CV link -->
 
 ---
 
