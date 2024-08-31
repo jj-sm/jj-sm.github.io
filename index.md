@@ -30,8 +30,9 @@ I am passionate about the intersection of astronomy and technology, where coding
 - **Interests:** Astronomy, Astrophysics, Physics, Mathematics, Coding, Photography, Music
 
 <div style="text-align: center;">
-    <img src="resources/images/pfp.jpg" alt="Profile Image" style="width: 250px; border-radius: 0%;">
+    <img src="resources/images/pfp.jpg" alt="Profile Image" style="width: 250px; border-radius: 50%;">
 </div>
+
 ---
 
 ## 🧠 Research Interests
@@ -46,7 +47,7 @@ I am passionate about the intersection of astronomy and technology, where coding
 
 ## 📄 CV
 
-[Download my CV](resouces/docs/CV__EN_-2.pdf) <!-- Replace with your CV link -->
+[Download my CV](resources/docs/CV__EN_-2.pdf) <!-- Replace with your CV link -->
 
 ---
 
@@ -88,7 +89,4 @@ I am passionate about the intersection of astronomy and technology, where coding
 
 ---
 
-
-
 <!-- Optional: Add a footer with links to social media or additional resources -->
-
