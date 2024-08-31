@@ -15,7 +15,7 @@ I am passionate about the intersection of astronomy and technology, where coding
 - **Interests:** Astronomy, Astrophysics, Physics, Mathematics, Coding, Photography, Music
 
 <div style="text-align: center;">
-    <img src="resources/images/pfp.jpg" alt="Profile Image" style="width: 150px; border-radius: 80%;">
+    <img src="resources/images/pfp.jpg" alt="Profile Image" style="width: 150px; border-radius: 15%;">
 </div>
 ---
 
