@@ -19,7 +19,7 @@
 
 ---
 
-## 🌌 Not Me
+## 🌌 About Me
 
 As a Colombian Astronomy undergraduate at Pontificia Universidad Católica de Chile, I am captivated by the mysteries of the cosmos, where I can apply and integrate diverse skills into impactful research. My academic journey has been marked by rigorous training and participation in prestigious international competitions, such as IOAA and OLAA.
 
