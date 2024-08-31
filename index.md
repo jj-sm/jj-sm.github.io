@@ -4,9 +4,7 @@
     <link rel="apple-touch-icon" href="resources/images/favicon.png"> <!-- Optional, for iOS devices -->
 </head>
 
-<div style="text-align: center;">
-    <h1>Juan José Sánchez Medina</h1>
-    
+<div style="text-align: center;">    
     <h2>
         <a href="#home">Home</a> | 
         <a href="#cv">CV</a> | 
