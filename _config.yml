@@ -12,7 +12,5 @@ plugins:
 - jekyll-remote-theme
 google_analytics: UA-000000-0 # your Google Analytics tracking ID here
 
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
 github:
   is_project_page: false
