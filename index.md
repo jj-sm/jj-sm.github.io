@@ -1,5 +1,5 @@
 <head>
-    <link rel="shortcut icon" type="image/x-icon" href="/resources/images/favicon.ico?">
+    <link rel="shortcut icon" type="image/x-icon" href="/resources/images/favicon.png?">
     <link rel="apple-touch-icon" href="/resources/images/favicon.png"> <!-- Optional, for iOS devices -->
 </head>
 
