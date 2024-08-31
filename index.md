@@ -14,8 +14,9 @@ I am passionate about the intersection of astronomy and technology, where coding
 - **Languages:** Spanish (Native), English (B2)
 - **Interests:** Astronomy, Astrophysics, Physics, Mathematics, Coding, Photography, Music
 
-![Profile Image](resources/images/pfp.jpg) <!-- Replace with your image -->
-
+<div style="text-align: center;">
+    <img src="resources/images/pfp.jpg" alt="Profile Image" style="width: 150px; border-radius: 50%;">
+</div>
 ---
 
 ## 🧠 Research Interests
@@ -68,7 +69,7 @@ I am passionate about the intersection of astronomy and technology, where coding
 ## 📞 Contact
 
 - **Email:** [iCloud Mail](mailto:markers-basic.0m@icloud.com)
-- **LinkedIn:** [linkedin.com/in/your-profile]([https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/jj-sm/) <!-- Replace with your LinkedIn profile link -->
+- **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/jj-sm/) <!-- Replace with your LinkedIn profile link -->
 
 ---
 
