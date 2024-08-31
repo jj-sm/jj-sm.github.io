@@ -1,6 +1,6 @@
 <head>
-    <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="resources/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="resources/images/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="resources/images/favicon.png"> <!-- Optional, for iOS devices -->
 </head>
 
