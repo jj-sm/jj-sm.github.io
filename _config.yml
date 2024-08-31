@@ -1,12 +1,12 @@
-title: Not Me # your name (or website title) here
+title: About Me # your name (or website title) here
 favicon: "/resources/images/favicon.ico"
-# logo: "/images/favicon.ico raw=true" # your photo (or logo) here
-# description: > # your text below (remove <br> elements if you don't need line breaks)
-#  Astronomy Student 
-#  <br><br>
+logo: "/resources/images/favicon.ico raw=true" # your photo (or logo) here
+description: > # your text below (remove <br> elements if you don't need line breaks)
+  Santiago, Chile
+  <br><br>
 #  Second description 
 #  <br><br>
-#  <a href="https://www.linkedin.com/in/example/">View My LinkedIn Profile</a> 
+  <a href="https://www.linkedin.com/in/jj-sm/">LinkedIn Profile</a> 
   
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
