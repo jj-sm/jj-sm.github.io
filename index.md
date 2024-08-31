@@ -19,11 +19,11 @@
 
 ## 🌌 About Me
 
+As a Colombian Astronomy undergraduate at Pontificia Universidad Católica de Chile, I am captivated by the mysteries of the cosmos, where I can apply and integrate diverse skills into impactful research. My academic journey has been marked by rigorous training and participation in prestigious international competitions, such as IOAA and OLAA.
+
 <div style="text-align: center;">
     <img src="resources/images/pfp.jpg" alt="Profile Image" style="width: 250px; border-radius: 0%;">
 </div>
-
-As a Colombian Astronomy undergraduate at Pontificia Universidad Católica de Chile, I am captivated by the mysteries of the cosmos, where I can apply and integrate diverse skills into impactful research. My academic journey has been marked by rigorous training and participation in prestigious international competitions, such as IOAA and OLAA.
 
 I am passionate about the intersection of astronomy and technology, where coding meets the cosmos. Driven by curiosity I am eager to contribute to the field of astronomy through innovative research and collaboration.
 
