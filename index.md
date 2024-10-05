@@ -53,6 +53,7 @@ I am passionate about the intersection of astronomy and technology, where coding
 
 ### Comparison between Different Methods to Determine the Distance to LMC
 *Research Project - Colegio Andino de Tunja, 2023*
+- DOI: [10.5281/zenodo.13894141](https://doi.org/10.5281/zenodo.13894141)
 
 ---
 
