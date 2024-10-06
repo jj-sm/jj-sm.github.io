@@ -1,6 +1,7 @@
 <head>
     <link rel="shortcut icon" type="image/png" href="favicon.png?">
     <link rel="apple-touch-icon" href="/resources/images/favicon.png"> <!-- Optional, for iOS devices -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome CDN -->
 </head>
 
 <div style="text-align: center;">    
@@ -16,8 +17,8 @@
 
 ---
 
-## 🌌 About Me
-
+## <i class="fas fa-globe"></i> About Me
+<div id="home"></div>
 As a Colombian Astronomy undergraduate at Pontificia Universidad Católica de Chile, I am captivated by the mysteries of the cosmos, where I can apply and integrate diverse skills into impactful research. My academic journey has been marked by rigorous training and participation in prestigious international competitions, such as IOAA and OLAA.
 
 <div style="text-align: center;">
@@ -30,11 +31,10 @@ I am passionate about the intersection of astronomy and technology, where coding
 - **Languages:** Spanish (Native), English (B2)
 - **Interests:** Astronomy, Astrophysics, Physics, Mathematics, Coding, Photography, Music
 
-
 ---
 
-## 🧠 Research Interests
-
+## <i class="fas fa-brain"></i> Research Interests
+<div id="publications"></div>
 - Astrophysics
 - Stellar and Galactic Dynamics
 - Computational Astronomy
@@ -43,29 +43,30 @@ I am passionate about the intersection of astronomy and technology, where coding
 
 ---
 
-## 📄 CV
-
+## <i class="fas fa-file-alt"></i> CV
+<div id="cv"></div>
 [Download my CV](resources/docs/CV__EN_-2.pdf) <!-- Replace with your CV link -->
 
 ---
 
-## 📚 Publications
-
+## <i class="fas fa-book"></i> Publications
+<div id="publications"></div>
 ### Comparison between Different Methods to Determine the Distance to LMC
 *Research Project - Colegio Andino de Tunja, 2023*
-- DOI: [10.5281/zenodo.13894141](https://doi.org/10.5281/zenodo.13894141)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13894141.svg)](https://doi.org/10.5281/zenodo.13894141)
 
 ---
 
-## 🗣 Talks
-
+## <i class="fas fa-comments"></i> Talks
+<div id="talks"></div>
 ### Messier Objects and Astrophotography
 *Presented at the National Astronomy Meeting (RAC) 2023, November 2023*
 
 ---
 
-## 🏅 Awards
-
+## <i class="fas fa-medal"></i> Awards
+<div id="awards"></div>
 - **Honorable Mention (HM)** at the XVII International Olympiad on Astronomy and Astrophysics (IOAA), 2024
 - **Bronze Medal** at the XV Latin America Olympiad on Astronomy and Astrophysics (OLAA), 2023
 - **Second Place** at the Colombian Astronomy Olympiads (Universidad Antonio Nariño), 2023
@@ -73,7 +74,7 @@ I am passionate about the intersection of astronomy and technology, where coding
   
 ---
 
-## 🛠 Skills
+## <i class="fas fa-tools"></i> Skills
 
 - **Programming Languages:** Python
 - **Tools:** LaTeX, Markdown, Wiki.js
@@ -81,8 +82,8 @@ I am passionate about the intersection of astronomy and technology, where coding
 
 ---
 
-## 📞 Contact
-
+## <i class="fas fa-envelope"></i> Contact
+<div id="contact"></div>
 - **Email:** [iCloud Mail](mailto:markers-basic.0m@icloud.com)
 - **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/jj-sm/) <!-- Replace with your LinkedIn profile link -->
 
