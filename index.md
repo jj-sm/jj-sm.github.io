@@ -45,7 +45,7 @@ I am passionate about the intersection of astronomy and technology, where coding
 
 ## <i class="fas fa-file-alt"></i> CV
 <div id="cv"></div>
-[Download my CV](resources/docs/CV__EN___Private_.pdf) <!-- Replace with your CV link -->
+<a href="jj-sm.github.io/About-me/resources/docs/CV__EN___Private_.pdf" target="_blank">Open my CV</a>
 
 ---
 
