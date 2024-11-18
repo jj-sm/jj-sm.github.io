@@ -1,6 +1,6 @@
 <head>
-    <link rel="shortcut icon" type="image/png" href="resources/favicon.png?">
-    <link rel="apple-touch-icon" href="/resources/images/favicon.png"> <!-- Optional, for iOS devices -->
+    <link rel="shortcut icon" type="image/png" href="resources/favicon.png">
+    <link rel="apple-touch-icon" href="resources/favicon.png"> <!-- For iOS devices -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome CDN -->
 </head>
 
