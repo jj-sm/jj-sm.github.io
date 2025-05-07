@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - astro # Trigger deployment on pushes to the 'astro' branch
+      - main # Trigger deployment on pushes to the 'astro' branch
 
   workflow_dispatch: # Allow manual triggering of the workflow
 
