@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://astro-sphere-demo.vercel.app/sitemap-index.xml
