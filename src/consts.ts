@@ -2,7 +2,7 @@ import type { Site, Page, Links, Socials } from "@types"
 
 // Global
 export const SITE: Site = {
-  TITLE: "Astro Sphere",
+  TITLE: "Juan José S. M.",
   DESCRIPTION: "Welcome to Astro Sphere, a portfolio and blog for designers and developers.",
   AUTHOR: "Mark Horn",
 }
@@ -12,6 +12,26 @@ export const WORK: Page = {
   TITLE: "Work",
   DESCRIPTION: "Places I have worked.",
 }
+
+// export const ABOUT: Page = {
+//   TITLE: "About",
+//   DESCRIPTION: "Learn more about me.",
+// }
+
+// export const CODE: Page = {
+//   TITLE: "Code",
+//   DESCRIPTION: "Learn more about me.",
+// }
+
+// export const RESEARCH: Page = {
+//   TITLE: "Research",
+//   DESCRIPTION: "Learn more about me.",
+// }
+
+// export const CONTACT: Page = {
+//   TITLE: "Research",
+//   DESCRIPTION: "Learn more about me.",
+// }
 
 // Blog Page
 export const BLOG: Page = {
@@ -36,19 +56,19 @@ export const LINKS: Links = [
   { 
     TEXT: "Home", 
     HREF: "/", 
-  },
-  { 
-    TEXT: "Work", 
-    HREF: "/work", 
-  },
-  { 
-    TEXT: "Blog", 
-    HREF: "/blog", 
-  },
-  { 
-    TEXT: "Projects", 
-    HREF: "/projects", 
-  },
+  }
+  // { 
+  //   TEXT: "Work", 
+  //   HREF: "/work", 
+  // },
+  // { 
+  //   TEXT: "Blog", 
+  //   HREF: "/blog", 
+  // },
+  // { 
+  //   TEXT: "Projects", 
+  //   HREF: "/projects", 
+  // },
 ]
 
 // Socials
@@ -56,26 +76,26 @@ export const SOCIALS: Socials = [
   { 
     NAME: "Email",
     ICON: "email", 
-    TEXT: "markhorn.dev@gmail.com",
-    HREF: "mailto:markhorn.dev@gmail.com",
+    TEXT: "iCloud Mail",
+    HREF: "mailto:8-feta-scrawls@icloud.com",
   },
   { 
     NAME: "Github",
     ICON: "github",
-    TEXT: "markhorn-dev",
-    HREF: "https://github.com/markhorn-dev/astro-sphere"
+    TEXT: "jj-sm",
+    HREF: "https://github.com/jj-sm"
   },
   { 
     NAME: "LinkedIn",
     ICON: "linkedin",
-    TEXT: "markhorn-dev",
-    HREF: "https://www.linkedin.com/in/markhorn-dev/",
+    TEXT: "jj-sm",
+    HREF: "https://www.linkedin.com/in/jj-sm/",
   },
   { 
-    NAME: "Twitter",
-    ICON: "twitter-x",
-    TEXT: "markhorn_dev",
-    HREF: "https://twitter.com/markhorn_dev",
+    NAME: "Orcid",
+    ICON: "orcid",
+    TEXT: "0009-0005-4685-695X",
+    HREF: "https://orcid.org/0009-0005-4685-695X",
   },
 ]
 
