@@ -29,7 +29,8 @@ import Container from "@components/Container.astro"
               <svg class="size-6 fill-current">
                 <use href="/brand.svg#brand"/>
               </svg>
-              {SITE.TITLE}
+              <!-- {SITE.TITLE} -->
+               Juan José Sánchez Medina
             </a>
           </div>
           <div class="flex gap-2 justify-center sm:justify-end items-center">
@@ -37,7 +38,7 @@ import Container from "@components/Container.astro"
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300"></span>
               <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
             </span>
-            All systems normal
+            All working!
           </div>
         </div>
       </Container>
@@ -47,16 +48,16 @@ import Container from "@components/Container.astro"
       <Container size="md">
         <div class="h-full grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div class="order-2 sm:order-1 flex flex-col items-center justify-center sm:items-start">
-            <div class="legal">
+            <!-- <div class="legal">
               <a href="/legal/terms" class="text-current hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
                 Terms
               </a> |
               <a href="/legal/privacy" class="text-current hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
                 Privacy
               </a>
-            </div>
+            </div> -->
             <div class="text-sm mt-2">
-              &copy; 2024 | All rights reserved
+                &copy; {new Date().getFullYear()} | All rights reserved (<a href="https://github.com/jj-sm" class="text-current hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">jj-sm</a>)
             </div>
           </div>
   

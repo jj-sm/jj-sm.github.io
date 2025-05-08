@@ -69,31 +69,31 @@ const stack = [
   
   <!-- HERO -->
   <section class="relative h-screen w-full">
-    <div id="planetcont" class='animate absolute inset-0 top-1/4 overflow-hidden'>
-      <div id="crescent" class='absolute top-0 left-1/2 -translate-x-1/2 w-[250vw] min-h-[100vh] aspect-square rounded-full p-[1px] bg-gradient-to-b from-black/25 dark:from-white/75 from-0% to-transparent to-5%'>
+    <div id="planetcont" class='animate absolute inset-0 top-1/2 overflow-hidden'>
+      <div id="crescent" class='absolute top-0 left-1/2 -translate-x-1/2 w-[250vw] min-h-[100vh] aspect-square rounded-full p-[2px] bg-gradient-to-b from-blue-600/75 dark:from-blue-600/75 from-0% to-transparent to-5%'>
         <div id="planet" class='w-full h-full bg-white dark:bg-black rounded-full p-[1px] overflow-hidden flex justify-center'>
-          <div id="blur" class='w-full h-20 rounded-full bg-neutral-900/25 dark:bg-white/25 blur-3xl'/>
+          <div id="blur" class='w-full h-20 rounded-full bg-blue-600/40 dark:bg-blue-700/40 blur-3xl '/>
         </div>
       </div>
     </div>
-    <div class="animate absolute h-full w-full flex items-center justify-center">
+    <div class="animate absolute h-full w-full flex items-center justify-center top-1/4">
       <div class='relative w-full h-full flex items-center justify-center'>
         <div class='p-5 text-center'>
           <p class='animated text-lg md:text-xl lg:text-2xl font-semibold opacity-75'>
-            Hello, I am ... Pepito
+            Hello, I am
           </p>
           <p class='animated text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-black dark:text-white'>
-            Astro Sphere
+            Juan José
           </p>
           <p class='animated text-sm md:text-base lg:text-lg opacity-75'>
-            Currently designing products for humans.
+            Astronomer in progress; but also a bit of this,<br> a bit of that, and a lot of everything else.
           </p>
           <div id="ctaButtons" class='animated flex flex-wrap gap-4 justify-center mt-5'>
-            <a href='/blog' class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
-              Read my blog
-            </a>
+            <!-- <a href='/blog' class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
+              Read my blog!
+            </a> -->
             <a href='/work' class='py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
-              View my work
+              About Me
             </a>
           </div>
         </div>
@@ -105,19 +105,32 @@ const stack = [
     <div class="mx-auto max-w-screen-sm p-5 space-y-24 pb-16">
 
       <!-- About Section -->
-      <section class="animate">
+      <!-- <section class="animate">
         <article>
-          <p>I am a <b><i>software engineer</i></b>, <b><i>ui/ux designer</i></b>, <b><i>product planner</i></b>, <b><i>mentor</i></b>, <b><i>student</i></b>, <b><i>minimalist</i></b>, <b><i>eternal optimist</i></b>, <b><i>crypto enthusiast</i></b> and <b><i>sarcasm connoisseur</i></b>.</p>
-          <p>I love to both build and break things. I am motivated by challenging projects with self-guided research and dynamic problem solving. My true passion is crafting creative front end designs with unique takes on color, typography and motion.</p>
-          <p>During my career</p>
-          <p>I have built products ranging from marketing and ecommerce websites to complex enterprise apps with focus on delivering fast, elegant code along with delightful user interfaces.</p>
-          <p>Now</p>
-          <p>I currently work as a software engineer at StreamlineFS, where I do product planning, design and development.</p>
+          <p>As a Colombian Astronomy undergraduate at Pontificia Universidad Católica de Chile, I am captivated by the mysteries of the cosmos, where I can apply and integrate diverse skills into impactful research. My academic journey has been marked by rigorous training and participation in prestigious international competitions, such as IOAA and OLAA.</p>
+          <p>I am passionate about the intersection of astronomy and technology, where coding meets the cosmos. Driven by curiosity, I am eager to contribute to the field of astronomy through innovative research and collaboration.</p>
         </article>
+      </section> -->
+      <section class="animate">
+        <div class="flex flex-col md:flex-row items-center gap-6">
+          <!-- Image -->
+          <div class="flex-shrink-0 pb-12">
+            <img 
+              src="/pfp.jpg" 
+              alt="Profile Picture" 
+              class="w-32 md:w-48 rounded-md object-cover shadow-lg"
+            />
+          </div>
+          <!-- Description -->
+          <article>
+            <p>As a Colombian Astronomy undergraduate at Pontificia Universidad Católica de Chile, I am captivated by the mysteries of the cosmos, where I can apply and integrate diverse skills into impactful research. My academic journey has been marked by rigorous training and participation in prestigious international competitions, such as IOAA and OLAA.</p>
+            <p>I am passionate about the intersection of astronomy and technology, where coding meets the cosmos. Driven by curiosity, I am eager to contribute to the field of astronomy through innovative research and collaboration.</p>
+          </article>
+        </div>
       </section>
 
       <!-- Blog Preview Section -->
-      <section class="animate">
+      <!-- <section class="animate">
         <div class="space-y-4">
           <div class="flex justify-between">
             <p class="font-semibold text-black dark:text-white">
@@ -137,10 +150,10 @@ const stack = [
             ))}
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Tech Stack Section -->
-      <section class="animate">
+      <!-- <section class="animate">
         <div class="space-y-4">
           <p class="font-semibold text-black dark:text-white">
             Website build with
@@ -163,10 +176,10 @@ const stack = [
             </a>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Project Preview Section -->
-      <section class="animate">
+      <!-- <section class="animate">
         <div class="space-y-4">
           <div class="flex justify-between">
             <p class="font-semibold text-black dark:text-white">
@@ -186,7 +199,7 @@ const stack = [
             ))}
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Contact Section -->
       <section class="animate">
@@ -195,7 +208,7 @@ const stack = [
             Let's Connect
           </p>
           <p>
-            Reach out to me via email or on social media.
+            Contact me via email or the following platforms
           </p>
           <div class="grid grid-cols-4 gap-y-2 mt-4 auto-cols-min">
             {SOCIALS.map(social => (
