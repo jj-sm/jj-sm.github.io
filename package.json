@@ -23,6 +23,8 @@
     "@tailwindcss/typography": "^0.5.10",
     "astro": "^4.4.13",
     "clsx": "^2.1.0",
+    "d3": "^7.9.0",
+    "d3-celestial": "^0.7.35",
     "fuse.js": "^7.0.0",
     "sharp": "^0.33.2",
     "solid-js": "^1.8.15",

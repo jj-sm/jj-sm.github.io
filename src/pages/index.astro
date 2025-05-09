@@ -59,16 +59,24 @@ const stack = [
 
   <!-- Dark Theme: Twinkling Stars / Metors -->
   <div id="galaxy" class="fixed inset-0">
-    <div class="hidden dark:block">
+    <div class="dark:block block">
       <TwinklingStars/>
       <MeteorShower/>
+  
+      <!-- Starry Sky Background -->
+      <iframe 
+        src="/starry/index.html" 
+        class="absolute inset-0 w-full h-full border-none"
+        title="Starry Sky Background"
+      ></iframe>
     </div>
   </div>
 
-  <script is:inline src="/js/bg.js"></script>
-  
+  <!-- <script is:inline src="/js/bg.js"></script> -->
+
+
   <!-- HERO -->
-  <section class="relative h-screen w-full">
+  <section class="relative h-screen w-full pointer-events-none">
     <div id="planetcont" class='animate absolute inset-0 top-1/2 overflow-hidden'>
       <div id="crescent" class='absolute top-0 left-1/2 -translate-x-1/2 w-[250vw] min-h-[100vh] aspect-square rounded-full p-[2px] bg-gradient-to-b from-blue-600/75 dark:from-blue-600/75 from-0% to-transparent to-5%'>
         <div id="planet" class='w-full h-full bg-white dark:bg-black rounded-full p-[1px] overflow-hidden flex justify-center'>
@@ -78,7 +86,7 @@ const stack = [
     </div>
     <div class="animate absolute h-full w-full flex items-center justify-center top-1/4">
       <div class='relative w-full h-full flex items-center justify-center'>
-        <div class='p-5 text-center'>
+        <div class='p-5 text-center pointer-events-auto'>
           <p class='animated text-lg md:text-xl lg:text-2xl font-semibold opacity-75'>
             Hello, I am
           </p>
