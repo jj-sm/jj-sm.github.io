@@ -35,12 +35,12 @@ var hemi_light;
 var controls;
 
 //the latitude we're currently on (in degrees)
-var cur_lat_deg = 32.18;
+var cur_lat_deg = -33.5;
 //corresping to this object rotation
 var cur_rot_rad = lat2rot(cur_lat_deg);
 
 //the speed at which the sky dome rotates
-var rot_speed = 0.0005;
+var rot_speed = 0.0001;
 
 //convert a star's b-v temperature index to human eye color
 function bv2rgb(bv){    // RGB <0,1> <- BV <-0.4,+2.0> [-]
