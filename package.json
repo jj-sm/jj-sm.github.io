@@ -26,6 +26,8 @@
     "d3": "^7.9.0",
     "d3-celestial": "^0.7.35",
     "fuse.js": "^7.0.0",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
     "sharp": "^0.33.2",
     "solid-js": "^1.8.15",
     "tailwind-merge": "^2.2.1",

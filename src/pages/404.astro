@@ -1,0 +1,52 @@
+---
+import PageLayout from '@layouts/PageLayout.astro'; // Adjust path if your layout component is elsewhere or named differently
+import { SITE } from '@consts'; // Or your relevant constant for the site title/logo alt text
+
+const pageTitle = "404 - Page Not Found";
+const pageDescription = "Sorry, the page you are looking for does not exist.";
+---
+
+<PageLayout title={pageTitle} description={pageDescription}>
+  <div class="flex flex-col items-center justify-center text-center py-16 px-6 min-h-[calc(100vh-var(--header-height,80px)-var(--footer-height,80px))]">
+    {/* TODO: Replace '/logo.svg' with the actual path to your logo */}
+    <svg class="size-15 fill-current">
+        <use href="/brand.svg#brand"/>
+    </svg>
+
+    <h1 class="text-5xl md:text-7xl mt-5 font-bold text-zinc-900 dark:text-zinc-100 mb-4">
+      404
+    </h1>
+    <p class="text-xl md:text-2xl text-zinc-700 dark:text-zinc-300 mb-8">
+      Oops! Page Not Found.
+    </p>
+    <p class="text-md md:text-lg text-zinc-600 dark:text-zinc-400 mb-10">
+      {pageDescription}
+    </p>
+    <!-- <img src="https://http.cat/404" alt="404 Cat" class="w-1/2 md:w-1/3 mb-8 rounded-lg shadow-lg" /> -->
+    <a
+      href="/"
+      class="inline-block px-6 py-3 bg-black text-white dark:bg-white dark:text-black rounded-lg font-semibold hover:opacity-90 transition-opacity no-underline text-sm md:text-base"
+    >
+      Go Back Home
+    </a>
+  </div>
+</PageLayout>
+
+<style>
+  /* You can add page-specific styles here if needed.
+     The classes used above (flex, items-center, text-xl, etc.)
+     are typical of Tailwind CSS. If you're not using Tailwind,
+     you'll need to define these styles.
+  */
+  /* Example to ensure PageLayout fills height if it doesn't by default */
+  /*
+  :global(body > div:first-child), :global(main) {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  :global(main > div:first-child) {
+    flex-grow: 1;
+  }
+  */
+</style>

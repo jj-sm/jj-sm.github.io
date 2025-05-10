@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -73,7 +75,7 @@ article {
 }
 
 .page-heading {
-  @apply font-semibold text-black dark:text-white;
+  @apply font-semibold text-4xl text-black dark:text-white;
 }
 
 .blend {

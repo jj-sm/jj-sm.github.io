@@ -8,19 +8,19 @@ import ArticleBottomLayout from "@layouts/ArticleBottomLayout.astro"
 import TwinklingStars from "@components/TwinklingStars.astro"
 import MeteorShower from "@components/MeteorShower.astro"
 
-// Create the static projects pages
+// Create the static research pages
 export async function getStaticPaths() {
-	const projects = await getCollection("projects")
-	return projects.map((project) => ({
-		params: { slug: project.slug },
-		props: project,
+	const posts = await getCollection("research")
+	return posts.map((post) => ({
+		params: { slug: post.slug },
+		props: post,
 	}))
 }
 
-// Get the requested project
-type Props = CollectionEntry<"projects">
-const project = Astro.props
-const { title, summary } = project.data
+// Get the requested post
+type Props = CollectionEntry<"research">
+const post = Astro.props
+const { title, summary } = post.data
 ---
 
 <PageLayout title={title} description={summary}>
@@ -47,15 +47,14 @@ const { title, summary } = project.data
   </div>
 
   <script is:inline src="/js/bg.js"></script>
-
   <TopLayout>
     <div class="animate">
-      <ArticleTopLayout entry={project} />
+      <ArticleTopLayout entry={post}/>
     </div>
   </TopLayout>
   <BottomLayout>
     <div class="animate">
-      <ArticleBottomLayout entry={project} />
+      <ArticleBottomLayout entry={post} />
     </div>
   </BottomLayout>
 </PageLayout>

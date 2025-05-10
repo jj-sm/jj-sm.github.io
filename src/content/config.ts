@@ -10,6 +10,30 @@ const work = defineCollection({
   }),
 })
 
+const about = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    order: z.number(),
+    draft: z.boolean().optional(),
+}),
+})
+
+const research = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    summary: z.string(),
+    date: z.coerce.date(),
+    tags: z.array(z.string()),
+    draft: z.boolean().optional(),
+    url: z.string().optional(),
+    urltext: z.string().optional(),
+    paperUrl: z.string().optional(),
+    paperRepo: z.string().optional(),
+  }),
+})
+
 const blog = defineCollection({
   type: "content",
   schema: z.object({
@@ -42,4 +66,4 @@ const legal = defineCollection({
   }),
 })
 
-export const collections = { work, blog, projects, legal }
+export const collections = { work, blog, projects, legal, research, about }

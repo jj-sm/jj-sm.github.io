@@ -181,7 +181,7 @@ function load_stars() {
 function load_skysphere() {
     var skygeo = new THREE.SphereGeometry(14000, 96, 48);
     
-    sky_texture = textue_loader.load("starry/starmap_16k_d57.jpg");
+    sky_texture = textue_loader.load("/starry/starmap_16k_d57.jpg");
     
     var material = new THREE.MeshPhongMaterial({ 
         map: sky_texture,
@@ -255,10 +255,12 @@ function indexjs_setup() {
     hemi_light = new THREE.HemisphereLight(0x21266e, 0x080820, 0.2);
     scene.add(hemi_light);
     
-    //set camera position
-    //camera.position.x = 1;
-    //camera.lookAt(-1,0,0);
+    //set camera position [MOD, SET INIT CAMERA POSITION]
+    camera.position.x = 0.01;
     camera.position.z = -0.01;
+    camera.lookAt(250,-80,-40);
+    controls.target.set(250,-80,-40);
+    controls.update();
 
     
     //create the group object
@@ -282,9 +284,9 @@ function indexjs_setup() {
     
     animate();
     
-    //set the controls' event listener
-    document.getElementById("rot-speed").addEventListener("input", rot_speed_change);
-    document.getElementById("set-lat").addEventListener("click", set_lat_pressed);
+    //set the controls' event listener [MOD, FOR DYNAMIC LATITUDE]
+    // document.getElementById("rot-speed").addEventListener("input", rot_speed_change);
+    // document.getElementById("set-lat").addEventListener("click", set_lat_pressed);
 }
 
 // frame rate
@@ -306,7 +308,7 @@ function animate() {
     requestAnimationFrame(animate);
     
     //rotate the sky
-    //sky_group.rotateOAxis(unit_j, -rot_speed);
+    // sky_group.rotateOAxis(unit_j, -rot_speed);
     sky_group.rotateOnWorldAxis(axis_polar, -rot_speed);
     
     controls.update();

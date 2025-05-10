@@ -1,16 +1,16 @@
 
   function generateParticles(n) {
-    let value = `${getRandom(2560)}px ${getRandom(2560)}px #000`;
+    let value = `${getRandom(2560)}px ${getRandom(2560)}px #d1d1d1`;
     for (let i = 2; i <= n; i++) {
-      value += `, ${getRandom(2560)}px ${getRandom(2560)}px #000`;
+      value += `, ${getRandom(2560)}px ${getRandom(2560)}px #d1d1d1`;
     }
     return value;
   }
 
   function generateStars(n) {
-    let value = `${getRandom(2560)}px ${getRandom(2560)}px #fff`;
+    let value = `${getRandom(2560)}px ${getRandom(2560)}px #4a4a4a`;
     for (let i = 2; i <= n; i++) {
-      value += `, ${getRandom(2560)}px ${getRandom(2560)}px #fff`;
+      value += `, ${getRandom(2560)}px ${getRandom(2560)}px #4a4a4a`;
     }
     return value;
   }
@@ -70,6 +70,7 @@
       height: 1px;
       border-radius: 50%;
       box-shadow: ${starsSmall};
+      animation: animStar 50s linear infinite;
       `;
     }
 
@@ -79,6 +80,7 @@
       height: 1.5px;
       border-radius: 50%;
       box-shadow: ${starsMedium};
+      animation: animateParticle 100s linear infinite;
       `;
     }
 
@@ -88,6 +90,7 @@
       height: 2px;
       border-radius: 50%;
       box-shadow: ${starsLarge};
+      animation: animateParticle 150s linear infinite;
       `;
     }
   }

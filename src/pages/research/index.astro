@@ -1,29 +1,22 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content"
+import { getCollection } from "astro:content"
 import PageLayout from "@layouts/PageLayout.astro"
 import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
-import ArticleTopLayout from "@layouts/ArticleTopLayout.astro"
-import ArticleBottomLayout from "@layouts/ArticleBottomLayout.astro"
+import Research from "@components/Research"
+import { RESEARCH } from "@consts"
 import TwinklingStars from "@components/TwinklingStars.astro"
 import MeteorShower from "@components/MeteorShower.astro"
 
-// Create the static projects pages
-export async function getStaticPaths() {
-	const projects = await getCollection("projects")
-	return projects.map((project) => ({
-		params: { slug: project.slug },
-		props: project,
-	}))
-}
+const posts = (await getCollection("research"))
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
 
-// Get the requested project
-type Props = CollectionEntry<"projects">
-const project = Astro.props
-const { title, summary } = project.data
+const tags = [...new Set(posts.flatMap(post => post.data.tags))]
+  .sort((a, b) => a.localeCompare(b))
 ---
 
-<PageLayout title={title} description={summary}>
+<PageLayout title={RESEARCH.TITLE} description={RESEARCH.DESCRIPTION}>
   <!-- Light Mode: Particles -->
   <div class='absolute inset-0 block dark:hidden'>
     <div id='particles1' class='fixed inset-0'></div>
@@ -49,13 +42,15 @@ const { title, summary } = project.data
   <script is:inline src="/js/bg.js"></script>
 
   <TopLayout>
-    <div class="animate">
-      <ArticleTopLayout entry={project} />
+    <div class="animate page-heading">
+      {RESEARCH.TITLE}
     </div>
   </TopLayout>
   <BottomLayout>
     <div class="animate">
-      <ArticleBottomLayout entry={project} />
+      <Research client:load tags={tags} data={posts} />
     </div>
   </BottomLayout>
 </PageLayout>
+
+

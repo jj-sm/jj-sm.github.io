@@ -150,50 +150,72 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"blog": {
-"01-astro-sphere-file-structure/index.md": {
-	id: "01-astro-sphere-file-structure/index.md";
-  slug: "01-astro-sphere-file-structure";
+		"about": {
+"courses.md": {
+	id: "courses.md";
+  slug: "courses";
   body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
+  collection: "about";
+  data: InferEntrySchema<"about">
 } & { render(): Render[".md"] };
-"02-astro-sphere-getting-started/index.md": {
-	id: "02-astro-sphere-getting-started/index.md";
-  slug: "02-astro-sphere-getting-started";
+"education.md": {
+	id: "education.md";
+  slug: "education";
   body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
+  collection: "about";
+  data: InferEntrySchema<"about">
 } & { render(): Render[".md"] };
-"03-astro-sphere-add-new-post-or-projects/index.md": {
-	id: "03-astro-sphere-add-new-post-or-projects/index.md";
-  slug: "03-astro-sphere-add-new-post-or-projects";
+"experience.md": {
+	id: "experience.md";
+  slug: "experience";
   body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
+  collection: "about";
+  data: InferEntrySchema<"about">
 } & { render(): Render[".md"] };
-"04-astro-sphere-writing-markdown/index.md": {
-	id: "04-astro-sphere-writing-markdown/index.md";
-  slug: "04-astro-sphere-writing-markdown";
+"honors.md": {
+	id: "honors.md";
+  slug: "honors";
   body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
+  collection: "about";
+  data: InferEntrySchema<"about">
 } & { render(): Render[".md"] };
-"05-astro-sphere-writing-mdx/index.mdx": {
-	id: "05-astro-sphere-writing-mdx/index.mdx";
-  slug: "05-astro-sphere-writing-mdx";
+"interests.md": {
+	id: "interests.md";
+  slug: "interests";
   body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
-"06-astro-sphere-social-links/index.md": {
-	id: "06-astro-sphere-social-links/index.md";
-  slug: "06-astro-sphere-social-links";
+  collection: "about";
+  data: InferEntrySchema<"about">
+} & { render(): Render[".md"] };
+"publications.md": {
+	id: "publications.md";
+  slug: "publications";
   body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
+  collection: "about";
+  data: InferEntrySchema<"about">
+} & { render(): Render[".md"] };
+"skills.md": {
+	id: "skills.md";
+  slug: "skills";
+  body: string;
+  collection: "about";
+  data: InferEntrySchema<"about">
+} & { render(): Render[".md"] };
+"talks.md": {
+	id: "talks.md";
+  slug: "talks";
+  body: string;
+  collection: "about";
+  data: InferEntrySchema<"about">
 } & { render(): Render[".md"] };
 };
+"blog": Record<string, {
+  id: string;
+  slug: string;
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">;
+  render(): Render[".md"];
+}>;
 "legal": {
 "privacy.md": {
 	id: "privacy.md";
@@ -240,36 +262,30 @@ declare module 'astro:content' {
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
 };
-"work": {
-"apple.md": {
-	id: "apple.md";
-  slug: "apple";
+"research": {
+"01-LMC/index.md": {
+	id: "01-LMC/index.md";
+  slug: "01-lmc";
   body: string;
-  collection: "work";
-  data: InferEntrySchema<"work">
+  collection: "research";
+  data: InferEntrySchema<"research">
 } & { render(): Render[".md"] };
-"facebook.md": {
-	id: "facebook.md";
-  slug: "facebook";
+"02-astro-sphere-getting-started/index.md": {
+	id: "02-astro-sphere-getting-started/index.md";
+  slug: "02-astro-sphere-getting-started";
   body: string;
-  collection: "work";
-  data: InferEntrySchema<"work">
-} & { render(): Render[".md"] };
-"google.md": {
-	id: "google.md";
-  slug: "google";
-  body: string;
-  collection: "work";
-  data: InferEntrySchema<"work">
-} & { render(): Render[".md"] };
-"mcdonalds.md": {
-	id: "mcdonalds.md";
-  slug: "mcdonalds";
-  body: string;
-  collection: "work";
-  data: InferEntrySchema<"work">
+  collection: "research";
+  data: InferEntrySchema<"research">
 } & { render(): Render[".md"] };
 };
+"work": Record<string, {
+  id: string;
+  slug: string;
+  body: string;
+  collection: "work";
+  data: InferEntrySchema<"work">;
+  render(): Render[".md"];
+}>;
 
 	};
 
