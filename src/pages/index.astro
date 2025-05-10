@@ -7,7 +7,7 @@ import { SITE, SOCIALS } from "@consts"
 import TwinklingStars from "@components/TwinklingStars.astro"
 import MeteorShower from "@components/MeteorShower.astro"
 
-const posts = (await getCollection("blog"))
+const posts = (await getCollection("research"))
   .filter(post => !post.data.draft)
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0,3)
@@ -78,8 +78,8 @@ const stack = [
   <!-- HERO -->
   <section class="relative h-screen w-full pointer-events-none">
     <div id="planetcont" class='animate absolute inset-0 top-1/2 overflow-hidden'>
-      <div id="crescent" class='absolute top-0 left-1/2 -translate-x-1/2 w-[250vw] min-h-[100vh] aspect-square rounded-full p-[2px] bg-gradient-to-b from-blue-600/75 dark:from-blue-600/75 from-0% to-transparent to-5%'>
-        <div id="planet" class='w-full h-full bg-white dark:bg-black rounded-full p-[1px] overflow-hidden flex justify-center'>
+      <div id="crescent" class='pointer-events-auto absolute top-0 left-1/2 -translate-x-1/2 w-[250vw] min-h-[100vh] aspect-square rounded-full p-[2px] bg-gradient-to-b from-blue-600/75 dark:from-blue-600/75 from-0% to-transparent to-5%'>
+        <div id="planet" class='pointer-events-auto w-full h-full bg-white dark:bg-black rounded-full p-[1px] overflow-hidden flex justify-center'>
           <div id="blur" class='w-full h-20 rounded-full bg-blue-600/40 dark:bg-blue-700/40 blur-3xl '/>
         </div>
       </div>
@@ -117,7 +117,7 @@ const stack = [
           <!-- Image -->
           <div class="flex-shrink-0 pb-12">
             <img 
-              src="/pfp.jpg" 
+              src="/pfp.webp" 
               alt="Profile Picture" 
               class="w-32 md:w-48 rounded-md object-cover shadow-lg"
             />

@@ -42,6 +42,30 @@ var cur_rot_rad = lat2rot(cur_lat_deg);
 //the speed at which the sky dome rotates
 var rot_speed = 0.0001;
 
+function onWindowResize() {
+    if (camera && renderer) { // Check if they exist
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+
+        // Use visualViewport if available for more accurate dimensions on mobile
+        if (window.visualViewport) {
+            width = window.visualViewport.width;
+            height = window.visualViewport.height;
+        }
+
+        camera.aspect = width / height;
+        camera.updateProjectionMatrix();
+        renderer.setSize(width, height);
+    }
+}
+
+// Listen to both window resize and visualViewport resize
+window.addEventListener('resize', onWindowResize, false);
+if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', onWindowResize, false);
+}
+
+
 //convert a star's b-v temperature index to human eye color
 function bv2rgb(bv){    // RGB <0,1> <- BV <-0.4,+2.0> [-]
     var t;  
@@ -159,7 +183,7 @@ function load_stars() {
                 //the current position of the camera
                 viewVector: { type: "v3", value: camera.position },
                 //this star object's position vector within the universe(scene)
-                starObjPosition: { type: "v3", value: new THREE.Color(sy, sz, sx) },
+                starObjPosition: { type: "v3", value: new THREE.Color(sy, sz, sx) }, // Note: THREE.Color might not be what you intend for a position vector. Usually THREE.Vector3
             },
             vertexShader: _VS,
             fragmentShader: _FS,
@@ -181,7 +205,7 @@ function load_stars() {
 function load_skysphere() {
     var skygeo = new THREE.SphereGeometry(14000, 96, 48);
     
-    sky_texture = textue_loader.load("/starry/starmap_16k_d57.jpg");
+    sky_texture = textue_loader.load("/starry/starmap_16k_d57 Large.jpeg");
     
     var material = new THREE.MeshPhongMaterial({ 
         map: sky_texture,
@@ -229,16 +253,22 @@ function set_lat_pressed() {
 
 function indexjs_setup() {
     scene = new THREE.Scene();
-    camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 15000);
+    // Initialize with current dimensions
+    let initialWidth = window.innerWidth;
+    let initialHeight = window.innerHeight;
+    if (window.visualViewport) {
+        initialWidth = window.visualViewport.width;
+        initialHeight = window.visualViewport.height;
+    }
+    camera = new THREE.PerspectiveCamera(60, initialWidth / initialHeight, 0.1, 15000);
     
     //create the loaders
     textue_loader = new THREE.TextureLoader();
     font_loader = new THREE.FontLoader();
     
     renderer = new THREE.WebGLRenderer({"antialias": true});
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    //enable shadows
-    renderer.shadowMap.enabled = true;
+    // renderer.setSize is called by onWindowResize at the end of setup
+    
     //add to document
     document.body.appendChild(renderer.domElement);
     
@@ -287,6 +317,8 @@ function indexjs_setup() {
     //set the controls' event listener [MOD, FOR DYNAMIC LATITUDE]
     // document.getElementById("rot-speed").addEventListener("input", rot_speed_change);
     // document.getElementById("set-lat").addEventListener("click", set_lat_pressed);
+
+    onWindowResize(); // Call to set initial size correctly using the chosen dimensions
 }
 
 // frame rate
@@ -317,10 +349,10 @@ function animate() {
     renderer.render(scene, camera);
 }
 
-function window_resize() {
-    renderer.setSize( window.innerWidth, window.innerHeight );
-    camera.aspect = window.innerWidth / window.innerHeight;
-}
+// function window_resize() { // This was the old, incorrect resize handler
+//     renderer.setSize( window.innerWidth, window.innerHeight );
+//     camera.aspect = window.innerWidth / window.innerHeight;
+// }
 
 document.addEventListener("DOMContentLoaded", indexjs_setup);
-window.addEventListener('resize', window_resize);
+// window.addEventListener('resize', window_resize); // This was the listener for the incorrect handler

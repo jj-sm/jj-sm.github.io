@@ -1,8 +1,18 @@
 body {
     padding: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
     background-color: #1b1b1b;
     font-family: sans-serif;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 div#settings {
@@ -71,4 +81,10 @@ button.blue-button:active {
     background-color: #07115e;
     border-color: #07115e;
     color: red;
+}
+
+#threejs-canvas { /* Or whatever ID/class your canvas has */
+    display: block; /* Removes extra space below canvas if it's an inline element */
+    width: 100%;
+    height: 100%;
 }
